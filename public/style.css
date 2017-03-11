@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*
+a5b5bf
+b0a1ba
+*/
+
+html{
+    height: 100%;
+}
+
+body {
+    font: 13px Helvetica, Arial;
+    height: 100%;
+}
+
+form {
+	 background: linear-gradient(to right, #2274a5, #e3ebff);
+   /* position: fixed;
+    bottom: 0; */
+    width: 100%;
+    height: 7%;
+    padding: .5%;
+}
+
+form input {
+    border: 0;
+    /*padding: 0.5%;*/
+    padding-left: 1%;
+    width: 89.5%;
+    margin-right: .5%;
+    height: 95%;
+}
+
+form input:hover{
+	border: 2px solid #a5b5bf;
+}
+
+
+form button {
+    width: 9%;
+    height: 95%;
+    /*background: rgb(130, 224, 255);*/
+    background: #2274a5;
+    border: none;
+    padding: 10px;
+}
+
+form button:hover{
+	background: #3385b6;
+}
+
+#messages {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    /*width: 85%;*/
+    width: 100%;
+    max-height: 100%;
+    overflow-y: auto;
+    line-height: 1.5em;
+    position: absolute;
+    bottom: 0;
+}
+
+#messages li {
+    padding: 5px 10px;
+}
+
+/*
+#messages li:nth-child(odd) {
+    background: #eee;
+}*/
+
+#top{
+	height: 7%;
+	width: 100%;
+	margin: 0;
+	padding:0; 
+	/*background-color: #2274a5;*/
+	background: linear-gradient(to right, #2274a5, #e3ebff);
+}
+
+#usersOnline {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-height: 100%;
+    overflow-y: auto;
+    line-height: 1.5em;
+    position: absolute;
+    bottom: 0;
+}
+#usersOnline li {
+    padding: 5px 10px;
+}
+/*
+#usersOnline li:nth-child(odd) {
+    background: #eee;
+}*/
+
+#chatContainer{
+	 line-height: 1.5em;
+    height: 86%;
+    width: 100%;
+    position: relative;
+    border: 1px solid black;
+    background-color: #e9f1f7;
+}
+
+#messageContainer{
+    height: 100%;
+    width: 85%;
+    border: 1px solid black;
+    position: relative;
+    /*margin-bottom: 10%;*/
+}
+
+#onlineUsersContainer{
+	height: 100%;
+	border: 1px solid black;
+	position: absolute;
+   bottom: 0;
+   left: 85%;
+   width: 15%;
+}
+
+.chatMsg{
+	display: inline;
+}
